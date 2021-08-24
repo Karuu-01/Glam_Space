@@ -1,37 +1,78 @@
+<!--Navbar-->
+<nav class="navbar navbar-default navbar-expand-lg navbar-light">
+  <div class="navbar-header">
+    <a class="navbar-brand" href="/">Glam<b>Your</b>Space</a>
+    <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
+      <span class="navbar-toggler-icon"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+  </div>
+  <!-- Collection of nav links, forms, and other content for toggling -->
+  <div id="navbarCollapse" class="collapse navbar-collapse">
+    <ul class="nav navbar-nav">
+      <li><a href="/">Home</a></li>
+      <li><a href="/">About</a></li>
+      <li class="dropdown">
+        <a data-toggle="dropdown" class="dropdown-toggle" href="#">View <b class="caret"></b></a>
+        <ul class="dropdown-menu">
+          <li><a routerLink="/LivingRoomComponent" routerLinkActive="active">Living Room</a></li>
+            <li><a routerLink="/BedroomComponent" routerLinkActive="active">Bedroom</a></li>
+            <li><a routerLink="/KitchenComponent" routerLinkActive="active">Kitchen</a></li>
+      
+        </ul>
+      </li>
+      <li><a href="#">Feedback</a></li>
+    </ul>
+    <form class="navbar-form form-inline navbar-right ml-auto">
+      <div class="input-group search-box">
+        <input type="text" class="form-control">
+        <span class="input-group-btn">
+          <button type="button" class="btn btn-primary"><span>Search</span></button>
+        </span>
+      </div>
+    </form>
+  </div>
+</nav>
+
 <h1>Living Room Space</h1>
 <section id="gallery">
   <div class="container">
     <div class="row">
     <div class="col-lg-4 mb-4">
     <div class="card">
-      <img src="/assets/IMAGE/li.jpeg" alt="" width="300" height="250" class="card-img-top">
+      <img src="/assets/li.jpeg" alt="" width="300" height="250" class="card-img-top">
       <div class="card-body">
-        <h5 class="card-title">Sunset</h5>
+        <h5 class="card-title">Living Room Space</h5>
         <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut eum similique repellat a laborum, rerum voluptates ipsam eos quo tempore iusto dolore modi dolorum in pariatur. Incidunt repellendus praesentium quae!</p>
-       <a href="" class="btn btn-outline-success btn-sm">Read More</a>
-        <a href="" class="btn btn-outline-danger btn-sm"><i class="far fa-heart"></i></a>
+        <button type="button" class="btn btn-primary"><i class="fa fa-shopping-cart"></i> Add</button>
+              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#productmodal1"><i class="fa fa-info"></i> Info</button> 
+              <h2 class="pull-right">$890</h2>
       </div>
      </div>
     </div>
   <div class="col-lg-4 mb-4">
   <div class="card">
-      <img src="/assets/IMAGE/decor.jpeg" alt="" width="300" height="250" class="card-img-top">
+      <img src="/assets/decor.jpeg" alt="" width="300" height="250" class="card-img-top">
       <div class="card-body">
-        <h5 class="card-title">Sunset</h5>
+        <h5 class="card-title">Living Room Space</h5>
         <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut eum similique repellat a laborum, rerum voluptates ipsam eos quo tempore iusto dolore modi dolorum in pariatur. Incidunt repellendus praesentium quae!</p>
-       <a href="" class="btn btn-outline-success btn-sm">Read More</a>
-        <a href="" class="btn btn-outline-danger btn-sm"><i class="far fa-heart"></i></a>
+        <button type="button" class="btn btn-primary"><i class="fa fa-shopping-cart"></i> Add</button>
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#productmodal1"><i class="fa fa-info"></i> Info</button> 
+        <h2 class="pull-right">$250</h2>
       </div>
       </div>
     </div>
     <div class="col-lg-4 mb-4">
     <div class="card">
-      <img src="/assets/IMAGE/ye.jpeg" alt="" width="300" height="250" class="card-img-top">
+      <img src="/assets/ye.jpeg" alt="" width="300" height="250" class="card-img-top">
       <div class="card-body">
-        <h5 class="card-title">Sunset</h5>
+        <h5 class="card-title">Living Room Space</h5>
         <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut eum similique repellat a laborum, rerum voluptates ipsam eos quo tempore iusto dolore modi dolorum in pariatur. Incidunt repellendus praesentium quae!</p>
-       <a href="" class="btn btn-outline-success btn-sm">Read More</a>
-        <a href="" class="btn btn-outline-danger btn-sm"><i class="far fa-heart"></i></a>
+        <button type="button" class="btn btn-primary"><i class="fa fa-shopping-cart"></i> Add</button>
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#productmodal1"><i class="fa fa-info"></i> Info</button> 
+        <h2 class="pull-right">$300</h2>
       </div>
      </div>
     </div>
@@ -43,34 +84,123 @@
     <div class="row">
     <div class="col-lg-4 mb-4">
     <div class="card">
-      <img src="/assets/IMAGE/living.jpeg" alt="" width="300" height="250" class="card-img-top">
+      <img src="/assets/living.jpeg" alt="" width="300" height="250" class="card-img-top">
       <div class="card-body">
-        <h5 class="card-title">Sunset</h5>
+        <h5 class="card-title">Living Room Space</h5>
         <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut eum similique repellat a laborum, rerum voluptates ipsam eos quo tempore iusto dolore modi dolorum in pariatur. Incidunt repellendus praesentium quae!</p>
-       <a href="" class="btn btn-outline-success btn-sm">Read More</a>
-        <a href="" class="btn btn-outline-danger btn-sm"><i class="far fa-heart"></i></a>
+        <button type="button" class="btn btn-primary"><i class="fa fa-shopping-cart"></i> Add</button>
+              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#productmodal1"><i class="fa fa-info"></i> Info</button> 
+              <h2 class="pull-right">$800</h2>
       </div>
      </div>
     </div>
   <div class="col-lg-4 mb-4">
   <div class="card">
-      <img src="/assets/IMAGE/living room.jpeg" alt="" width="300" height="250" class="card-img-top">
+      <img src="/assets/living room.jpeg" alt="" width="300" height="250" class="card-img-top">
       <div class="card-body">
-        <h5 class="card-title">Sunset</h5>
+        <h5 class="card-title">Living Room Space</h5>
         <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut eum similique repellat a laborum, rerum voluptates ipsam eos quo tempore iusto dolore modi dolorum in pariatur. Incidunt repellendus praesentium quae!</p>
-       <a href="" class="btn btn-outline-success btn-sm">Read More</a>
-        <a href="" class="btn btn-outline-danger btn-sm"><i class="far fa-heart"></i></a>
+        <button type="button" class="btn btn-primary"><i class="fa fa-shopping-cart"></i> Add</button>
+              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#productmodal1"><i class="fa fa-info"></i> Info</button> 
+              <h2 class="pull-right">$790</h2>
       </div>
       </div>
     </div>
     <div class="col-lg-4 mb-4">
     <div class="card">
-      <img src="/assets/IMAGE/livin.jpeg" alt="" width="300" height="250" class="card-img-top">
+      <img src="/assets/livin.jpeg" alt="" width="300" height="250" class="card-img-top">
       <div class="card-body">
-        <h5 class="card-title">Sunset</h5>
+        <h5 class="card-title">Living Room Space</h5>
         <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut eum similique repellat a laborum, rerum voluptates ipsam eos quo tempore iusto dolore modi dolorum in pariatur. Incidunt repellendus praesentium quae!</p>
-       <a href="" class="btn btn-outline-success btn-sm">Read More</a>
-        <a href="" class="btn btn-outline-danger btn-sm"><i class="far fa-heart"></i></a>
+        <button type="button" class="btn btn-primary"><i class="fa fa-shopping-cart"></i> Add</button>
+              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#productmodal1"><i class="fa fa-info"></i> Info</button> 
+              <h2 class="pull-right">$1250</h2>
+      </div>
+     </div>
+    </div>
+  </div>
+</div>
+</section>
+
+
+<section id="gallery">
+  <div class="container">
+    <div class="row">
+    <div class="col-lg-4 mb-4">
+    <div class="card">
+      <img src="/assets/living 1.jpeg" alt="" width="300" height="250" class="card-img-top">
+      <div class="card-body">
+        <h5 class="card-title">Living Room Space</h5>
+        <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut eum similique repellat a laborum, rerum voluptates ipsam eos quo tempore iusto dolore modi dolorum in pariatur. Incidunt repellendus praesentium quae!</p>
+        <button type="button" class="btn btn-primary"><i class="fa fa-shopping-cart"></i> Add</button>
+              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#productmodal1"><i class="fa fa-info"></i> Info</button> 
+              <h2 class="pull-right">$500</h2>
+      </div>
+     </div>
+    </div>
+  <div class="col-lg-4 mb-4">
+  <div class="card">
+      <img src="/assets/living 2.jpeg" alt="" width="300" height="250" class="card-img-top">
+      <div class="card-body">
+        <h5 class="card-title">Living Room Space</h5>
+        <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut eum similique repellat a laborum, rerum voluptates ipsam eos quo tempore iusto dolore modi dolorum in pariatur. Incidunt repellendus praesentium quae!</p>
+        <button type="button" class="btn btn-primary"><i class="fa fa-shopping-cart"></i> Add</button>
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#productmodal1"><i class="fa fa-info"></i> Info</button> 
+        <h2 class="pull-right">$750</h2>
+      </div>
+      </div>
+    </div>
+    <div class="col-lg-4 mb-4">
+    <div class="card">
+      <img src="/assets/living 3.jpeg" alt="" width="300" height="250" class="card-img-top">
+      <div class="card-body">
+        <h5 class="card-title">Living Room Space</h5>
+        <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut eum similique repellat a laborum, rerum voluptates ipsam eos quo tempore iusto dolore modi dolorum in pariatur. Incidunt repellendus praesentium quae!</p>
+        <button type="button" class="btn btn-primary"><i class="fa fa-shopping-cart"></i> Add</button>
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#productmodal1"><i class="fa fa-info"></i> Info</button> 
+        <h2 class="pull-right">$1100</h2>
+      </div>
+     </div>
+    </div>
+  </div>
+</div>
+</section>
+<section id="gallery">
+  <div class="container">
+    <div class="row">
+    <div class="col-lg-4 mb-4">
+    <div class="card">
+      <img src="/assets/living 4.jpeg" alt="" width="300" height="250" class="card-img-top">
+      <div class="card-body">
+        <h5 class="card-title">Living Room Space</h5>
+        <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut eum similique repellat a laborum, rerum voluptates ipsam eos quo tempore iusto dolore modi dolorum in pariatur. Incidunt repellendus praesentium quae!</p>
+        <button type="button" class="btn btn-primary"><i class="fa fa-shopping-cart"></i> Add</button>
+              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#productmodal1"><i class="fa fa-info"></i> Info</button> 
+              <h2 class="pull-right">$1300</h2>
+      </div>
+     </div>
+    </div>
+  <div class="col-lg-4 mb-4">
+  <div class="card">
+      <img src="/assets/living 5.jpeg" alt="" width="300" height="250" class="card-img-top">
+      <div class="card-body">
+        <h5 class="card-title">Living Room Space</h5>
+        <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut eum similique repellat a laborum, rerum voluptates ipsam eos quo tempore iusto dolore modi dolorum in pariatur. Incidunt repellendus praesentium quae!</p>
+        <button type="button" class="btn btn-primary"><i class="fa fa-shopping-cart"></i> Add</button>
+              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#productmodal1"><i class="fa fa-info"></i> Info</button> 
+              <h2 class="pull-right">$500</h2>
+      </div>
+      </div>
+    </div>
+    <div class="col-lg-4 mb-4">
+    <div class="card">
+      <img src="/assets/living 6.jpeg" alt="" width="300" height="250" class="card-img-top">
+      <div class="card-body">
+        <h5 class="card-title">Living Room Space</h5>
+        <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut eum similique repellat a laborum, rerum voluptates ipsam eos quo tempore iusto dolore modi dolorum in pariatur. Incidunt repellendus praesentium quae!</p>
+        <button type="button" class="btn btn-primary"><i class="fa fa-shopping-cart"></i> Add</button>
+              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#productmodal1"><i class="fa fa-info"></i> Info</button> 
+              <h2 class="pull-right">$950</h2>
       </div>
      </div>
     </div>
