@@ -22,7 +22,7 @@ export class BedroomService {
       
     }
   
-  let bedroomUrl = 'https://localhost:4567/bedrooms/'
+  let bedroomUrl = 'https://glam-space-api.herokuapp.com/bedrooms'
 
   let promise = new Promise<void>((resolve,reject) =>{
     this.http.get<ApiResponse>(bedroomUrl).toPromise().then

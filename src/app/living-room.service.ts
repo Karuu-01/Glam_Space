@@ -22,7 +22,7 @@ export class LivingRoomService {
       
     }
   
-  let livingUrl = `https://localhost:4567/livingrooms`
+  let livingUrl = `https://glam-space-api.herokuapp.com/livingrooms`
 
   let promise = new Promise<void>((resolve,reject) =>{
     this.http.get<ApiResponse>(livingUrl).toPromise().then

@@ -21,7 +21,7 @@ export class KitchenService {
       
     }
   
-  let kitchenUrl = 'https://localhost:4567/kitchens/'
+  let kitchenUrl = 'https://glam-space-api.herokuapp.com/kitchens'
 
   let promise = new Promise<void>((resolve,reject) =>{
     this.http.get<ApiResponse>(kitchenUrl).toPromise().then
