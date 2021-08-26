@@ -1,6 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { Bedroom } from '../bed';
-import { BedroomService } from '../bedroom.service';
 
 @Component({
   selector: 'app-bedroom',
@@ -9,25 +7,9 @@ import { BedroomService } from '../bedroom.service';
 })
 export class BedroomComponent implements OnInit {
 
-  
-  bedrooms:any;
-  
-  constructor(public bedroomService:BedroomService) {
-   }
- 
-   getBedrooms(){
-     this.bedroomService.getBedrooms().then((success)=>{
-      this.bedrooms = this.bedroomService.bedroom;
-     },
-     (error)=>{
-       console.log(error)
-     });
-}
+  constructor() { }
 
   ngOnInit(): void {
-    this.getBedrooms();
-    
   }
-  
 
 }

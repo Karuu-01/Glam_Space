@@ -1,45 +1,56 @@
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top d-flex align-items-center">
+    <div class="container d-flex justify-content-between">
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="/src/app/contacts/contacts.component.css">
-</head>
-<body>
+      <div class="logo">
+        <h1><a href="index.html">Glam Your Space</a></h1>
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+      </div>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto active" routerLink="/HomepageComponent" routerLinkActive="active">Home</a></li>
+          <li><a class="nav-link scrollto" routerLink="/AboutComponent" routerLinkActive="active">About</a></li>
+          <li><a class="nav-link scrollto" href="#services">Services</a></li>
+          <li><a class="nav-link scrollto " href="#portfolio">Portfolio</a></li>
+          <li><a class="nav-link scrollto" routerLink="/FormComponent" routerLinkActive="active">Form Create</a></li>
+          <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a routerLink="/HomepageComponent" routerLinkActive="active">Homepage</a></li>
+              <li><a routerLink="/LivingRoomComponent" routerLinkActive="active">Living Room</a></li>
+              <li><a routerLink="/BedroomComponent" routerLinkActive="active">Bedroom</a></li>
+              <li><a routerLink="/KitchenComponent" routerLinkActive="active">Kitchen</a></li>
+            </ul>
+          </li>
+          <li><a class="nav-link scrollto" routerLink="/ContactsComponent" routerLinkActive="active">Contact</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
   <div class="container">
     <div class="container-close">&times;</div>
-    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img src="https://images.unsplash.com/photo-1544457070-4cd773b4d71e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=543&q=80" class="d-block w-100" alt="...">
-        </div>
-        <div class="carousel-item">
-          <img src="..." class="d-block w-100" alt="...">
-        </div>
-        <div class="carousel-item">
-          <img src="..." class="d-block w-100" alt="...">
-        </div>
-      </div>
-    </div>
-          
+   
+          <img src="https://images.unsplash.com/photo-1544457070-4cd773b4d71e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=543&q=80" alt="...">
+   
     <div class="container-text">
-      <h2>Thank you for choosing
-        Glam Your Space <br></h2>
-      <p>Send us a message ,tell us how your experience was <br> </p>
-      <select type="DESIGN SPACE" placeholder=""  required>
-        <option value="space">Livingroom</option>
-        <option value="space">Bedroom</option>
-        <option value="space">Kitchen</option>
- </select>
-      <input type="email" placeholder="Email address">
-      <textarea>Message</textarea>
-      <button type="submit">Submit</button>
+      <h2>GLAM SPACE<br></h2>
+      <p>Choose your design space and enter your measurement.Some designs will be selected just for you. <br> </p>
+      <form action="">
+          <input type="name" placeholder="Your name" class="form-control" required >
+          <select type="DESIGN SPACE" placeholder=""  class="form-control"required>
+            <option value="Livingroom">Livingroom</option>
+            <option value="Bedroom">Bedroom</option>
+            <option value="Kitchen">Kitchen</option>
+     </select>
+      <button type="submit" >Submit</button>
+      </form> 
      
     </div>
   </div>
 
-</body>
-</html>
+
+  

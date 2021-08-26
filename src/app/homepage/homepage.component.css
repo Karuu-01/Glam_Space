@@ -1,0 +1,25 @@
+.what-we-do{
+  text-align: center;
+  padding-top: 40px;
+  font-family: 'Kaushan Script', cursive;
+}
+.what-we-do .headings{
+  padding-bottom: 38px;
+  font-family: 'Kaushan Script', cursive;
+}
+#product, #development, #design{
+  display: none;
+  font-size: 16px;
+  font-size: 20px;
+  font-weight: 600;
+  font-family: 'Kaushan Script', cursive;
+}
+.title{
+  padding: 6px;
+  font-family: 'Kaushan Script', cursive;
+}
+#product .title, #development .title, #design ,title{
+  font-size: 20px;
+  font-weight: 600;
+  font-family: 'Kaushan Script' cursive;
+}
