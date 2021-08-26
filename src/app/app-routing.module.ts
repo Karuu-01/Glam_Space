@@ -3,11 +3,17 @@ import { RouterModule, Routes } from '@angular/router';
 import { LivingRoomComponent } from './living-room/living-room.component';
 import { KitchenComponent } from './kitchen/kitchen.component';
 import { BedroomComponent } from './bedroom/bedroom.component';
+import { HomepageComponent } from './homepage/homepage.component';
+import { FormComponent } from './form/form.component';
+import { ContactsComponent } from './contacts/contacts.component';
 
 const routes: Routes = [
   {path: 'LivingRoomComponent', component: LivingRoomComponent},
   {path: 'KitchenComponent', component: KitchenComponent},
-  {path: 'BedroomComponent', component: BedroomComponent}
+  {path: 'BedroomComponent', component: BedroomComponent},
+  {path: 'HomepageComponent', component: HomepageComponent},
+  {path: 'FormComponent', component: FormComponent},
+  {path: 'ContactsComponent', component: ContactsComponent}
 ];
 
 @NgModule({
