@@ -6,6 +6,7 @@ import { BedroomComponent } from './bedroom/bedroom.component';
 import { HomepageComponent } from './homepage/homepage.component';
 import { FormComponent } from './form/form.component';
 import { ContactsComponent } from './contacts/contacts.component';
+import { AboutComponent } from './about/about.component';
 
 const routes: Routes = [
   {path: 'LivingRoomComponent', component: LivingRoomComponent},
@@ -13,7 +14,8 @@ const routes: Routes = [
   {path: 'BedroomComponent', component: BedroomComponent},
   {path: 'HomepageComponent', component: HomepageComponent},
   {path: 'FormComponent', component: FormComponent},
-  {path: 'ContactsComponent', component: ContactsComponent}
+  {path: 'ContactsComponent', component: ContactsComponent},
+  {path: 'AboutComponent', component: AboutComponent}
 ];
 
 @NgModule({
