@@ -8,6 +8,7 @@ import { HomeComponent } from './home/home.component';
 import { LivingRoomComponent } from './living-room/living-room.component';
 import { BedroomComponent } from './bedroom/bedroom.component';
 import { KitchenComponent } from './kitchen/kitchen.component';
+import { FormComponent } from './form/form.component';
 
 
 
@@ -17,7 +18,8 @@ import { KitchenComponent } from './kitchen/kitchen.component';
     HomeComponent,
     LivingRoomComponent,
     BedroomComponent,
-    KitchenComponent
+    KitchenComponent,
+    FormComponent
   ],
   imports: [
     BrowserModule,
