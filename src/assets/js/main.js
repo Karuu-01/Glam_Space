@@ -362,3 +362,5 @@ function validate(val) {
     carousel();
   
   })(jQuery);
+
+ 
