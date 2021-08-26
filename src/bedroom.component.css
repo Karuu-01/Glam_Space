@@ -1,6 +1,11 @@
 .btn{
   margin-left: 15px;
 }
+h1{
+  text-align: center;
+  font-size: 60px;
+  font-family:'Kaushan Script', curvise;
+}
 .navbar {
   font-size: 14px;
   background: #fff;
@@ -19,7 +24,7 @@
 }
 .navbar .navbar-brand b {
   font-weight: bold;
-  color: #1c6be0;
+  color: #012df0;
 }
 .navbar ul.nav li {
   font-size: 96%;
@@ -32,13 +37,14 @@
 }
 .search-box {
       position: relative;
+      right: 150px;
   }
 .search-box input.form-control, .search-box .btn {
   font-size: 14px;
   border-radius: 2px !important;
 }
 .search-box .input-group-btn {
-  padding-left: 4px;
+  padding-left: 10px;
 }
 .search-box input.form-control:focus {
   border-color: #f04f01;
@@ -97,13 +103,6 @@
     display: block;
   }
 }
-
-h1{
-  text-align: center;
-  font-size: 40px;
-  font-family:'Kaushan Script', curvise;
-}
-
 .card-title{
   font-size: 25px;
   color: rgb(0, 0, 0);
