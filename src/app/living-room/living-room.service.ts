@@ -1,16 +1,17 @@
 import { Injectable } from '@angular/core';
+import { Living } from '../living';
 import { HttpClient } from '@angular/common/http';
-import { Kitch } from './kitch';
 
 @Injectable({
   providedIn: 'root'
 })
-export class KitchenService {
+export class LivingRoomService {
 
-  kitchen!:Kitch;
+  
+  living!:Living;
 
   constructor(private http:HttpClient) { 
-    this.kitchen = new Kitch("","","");
+    this.living = new Living("","","");
   }
 
   getKitchen(){
@@ -21,17 +22,17 @@ export class KitchenService {
       
     }
   
-  let kitchenUrl = 'https://glam-space-api.herokuapp.com/kitchens'
+  let livingUrl = `https://glam-space-api.herokuapp.com/livingrooms`
 
   let promise = new Promise<void>((resolve,reject) =>{
-    this.http.get<ApiResponse>(kitchenUrl).toPromise().then
+    this.http.get<ApiResponse>(livingUrl).toPromise().then
     (response => {
-      this.kitchen = response;
+      this.living = response;
 
       resolve()
     },
     error=>{
-      this.kitchen.description = "We couldn’t find any description matching the kitchen given"
+      this.living.description = "We couldn’t find any description matching the living given"
 
       reject(error)
       })
